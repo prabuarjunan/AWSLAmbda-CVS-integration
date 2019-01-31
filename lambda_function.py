@@ -7,8 +7,8 @@ logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
 CVAPI_BASEURL="https://cds-aws-bundles.netapp.com:8080/v1"
-CVAPI_APIKEY = "enter your CVS API key"
-CVAPI_SECRETKEY = "enter your CVS secret key"
+CVAPI_APIKEY="enter your CVS API key here"
+CVAPI_SECRETKEY="enter your CVS secret key here"
 
 #Headers
 HEADERS = {
@@ -25,7 +25,6 @@ getfilesystemDetailsHeaders = {
 
 
 filesystemURL = CVAPI_BASEURL + "/FileSystems"
-filesystemDetails = CVAPI_BASEURL + "/FileSystems" + "/c756d817-d46e-3d09-8080-790bec931401/MountTargets"
 filesystemCreateURL = CVAPI_BASEURL
 
 def lambda_handler(event, context):
